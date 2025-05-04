@@ -1,9 +1,9 @@
 from itertools import product
 
 array = []
-for a in product("ПУЛЯ", repeat = 6):
-    if a.count("У") == 2:
+for a in product("ЛОДКА", repeat=4):
+    if a.count("О") >= 2:
         array.append(a)
 
 print(len(array))
-# 1215
+# 113

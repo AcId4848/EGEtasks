@@ -10,3 +10,5 @@ if len(table) == len(set(table)):
     for p in permutations("abcd"):
         if [f(**dict(zip(p, t))) for t in table] == [1, 1, 1, 1]:
             print(p)
+
+# cadb
