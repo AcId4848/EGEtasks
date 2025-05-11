@@ -14,9 +14,10 @@ def dist(p1, p2):
 
 
 def get_cluster(p0):
-    cluster = [p for p in data if dist(p0, p) < 0.8]
+    cluster = [p for p in data if dist(p0, p) < 0.5]
     if len(cluster) > 0:
-        for p in cluster: data.remove(p)
+        for p in cluster:
+            data.remove(p)
         next_cluster = [get_cluster(p) for p in cluster]
         cluster = cluster + sum(next_cluster, [])
     return cluster

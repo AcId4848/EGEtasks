@@ -1,7 +1,10 @@
-a = [int(x) for x in open("17_1994.txt")]
-ans = []
-for i in range(len(a) - 1):
-    if (a[i] * a[i+1]) > 0 and (a[i] + a[i+1]) % 7 == 0:
-        ans.append(a[i] * a[i+1])
+s = [int(f) for f in open("17_1994.txt")]
 
-print(len(ans), min(ans))
+arr = []
+for i in range(len(s)-1):
+    if s[i] * s[i+1] > 0 and (s[i] + s[i+1]) % 7 == 0:
+        arr.append(s[i] * s[i+1])
+
+
+print(len(arr), min(arr))
+# 359 115022

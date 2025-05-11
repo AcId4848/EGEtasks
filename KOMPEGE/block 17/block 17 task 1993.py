@@ -1,8 +1,9 @@
-a = [int(x) for x in open("17_1993.txt")]
-ans = []
-for i in range(len(a) - 1):
-    if (a[i] + a[i+1]) % 3 == 0 and (a[i] + a[i+1]) % 6 != 0  and abs(a[i] * a[i+1]) % 10 == 8:
-        ans.append(a[i] + a[i+1])
+s = [f for f in open("17_1993.txt")]
 
-print(len(ans), max(ans))
+arr = []
+for i in range(len(s)-1):
+    if (int(s[i]) + int(s[i+1])) % 3 == 0 and (int(s[i]) + int(s[i+1])) % 6 != 0 and str(int(s[i]) * int(s[i+1]))[-1] == "8":
+        arr.append(int(s[i]) + int(s[i+1]))
 
+print(len(arr), max(arr))
+# 140 17031

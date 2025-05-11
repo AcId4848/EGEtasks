@@ -1,8 +1,9 @@
-a = [int(x) for x in open("17_1999.txt")]
-ans = []
+s = [int(f) for f in open("17_1999.txt")]
 
-for i in range(len(a) - 2):
-    if (a[i] % 12 == 0 or a[i+1] % 12 == 0 or a[i+2] % 12 == 0) and (a[i] % 3 == 0 and a[i+1] % 3 == 0 and a[i+2] % 3 == 0):
-        ans.append((a[i] + a[i+1] + a[i+2]) / 3)
+arr = []
+for i in range(len(s)-2):
+    if (s[i] % 12 == 0 or s[i+1] % 12 == 0 or s[i+2] % 12 == 0) and (s[i] % 3 == 0 and s[i+1] % 3 == 0 and s[i+2] % 3 == 0):
+        arr.append(int((s[i] + s[i+1] + s[i+2]) // 3))
 
-print(len(ans), min(ans))
+print(len(arr), min(arr))
+# 119 -7213
