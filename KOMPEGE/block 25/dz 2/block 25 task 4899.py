@@ -1,2 +1,1 @@
-# from fnmatch import fnmatch
-# for x in range(65001, )
+from fnmatch import fnmatch
