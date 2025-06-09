@@ -22,6 +22,8 @@ for s in open("27_B_17916.txt"):
     else:
         clustersB[4].append([x, y])
 
+print([len(a) for a in clustersA])
+print([len(a) for a in clustersB])
 
 def dist(p1, p2):
     x1, y1, x2, y2 = *p1, *p2

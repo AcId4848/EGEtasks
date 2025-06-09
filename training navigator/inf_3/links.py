@@ -9,7 +9,8 @@ while True:
     count = 0
     count_done = 0
     for i in s:
-        if os.listdir().count(f"block {num} task {i.rstrip()}.py") == 1 or os.listdir().count(f"{i.rstrip()}.xlsx") == 1:
+        if os.listdir().count(f"block {num} task {i.rstrip()}.py") == 1 or os.listdir().count(f"{i.rstrip()}.xlsx") == 1 or \
+        os.listdir().count(f"{i.rstrip()}.txt") == 1:
             print(f"{i}", end="")
             count_done += 1
             count += 1
